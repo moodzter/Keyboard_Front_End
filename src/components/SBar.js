@@ -8,9 +8,16 @@ function App() {
         <div className="main">
            <h1> Database Search </h1> 
             <div className="search">
-            <TextField id="outlined-basic"/>
+            <TextField 
+            id="outlined-basic"
+            variant="outlined"
+            fullWidth
+            label="Search"
+            />
             </div>
-
+        <List/>
         </div>
-    )
+    );
 }
+
+export default App;
