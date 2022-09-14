@@ -8,8 +8,8 @@ const CreateKeyboard = () => {
 
     return (
         <div>
-            <h1>Create Keyboard Component</h1>
-            <Button> hello </Button>
+            <h1>Create Keyboard</h1>
+            <Button> New Build </Button>
         </div>
     )
 }
