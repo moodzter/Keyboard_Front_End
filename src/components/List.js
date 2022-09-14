@@ -11,8 +11,8 @@ function List(props) {
             return L;
         }
         else {
-            // return L.data.toLowerCase().includes?(props.input) : L.data?.toLowercase();
-            return L.input.toLowerCase().includes(props.input)
+            return L.text?.toLowerCase().includes(props.input);
+            // return L.input?.toLowerCase().includes(props.input)
         }
     })
     return (
