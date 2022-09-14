@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import {Table} from 'reactstrap';
 import axios from "axios";
+// import Board0 from './components/Board0';
     
 const ShowKeyboard0 = () => {
     const [board, setBoard] = useState([])
+    // pagination code:
+    // const [loading, setLoading] = useState(false);
+    // const [currentPage, setCurrentPage] = useState(1);
+    // const [boardsPerPage, setBoardsPerPage] = useState(5);
 
     const getBoard = () => {
         axios   
@@ -15,23 +20,37 @@ const ShowKeyboard0 = () => {
             .catch((error) => console.error(error))
     }
 
+    // pagination code:
+    // const fetchBoards = async () => {
+    //     setLoading(true);
+    //     const res = await axios.get('http://localhost:8000/api/keyboards')
+    //     setBoard(res.data);
+    //     setLoading(false);
+    // }
+
     useEffect(() => {
-        getBoard()
+        getBoard();
+        // fetchBoards();
     }, [])
+
+    // get current posts for pagination
+    // const indexOfLastBoard = currentPage * boardsPerPage;
+    // const indexOfFirstBoard = indexOfLastBoard - boardsPerPage;
+    // const currentBoards = board.slice(indexOfFirstBoard, indexOfLastBoard);
 
     return (
         <div>
-            <h1>Keyboards:</h1>
+            <h1 className="text-primary mb-2 mt-2">KEYBOARDS:</h1>
             <Table responsive>
                 <thead>
                     <tr>
-                        <th>ID #</th>
-                        <th>Models</th>
-                        <th>Switches</th>
-                        <th>KeyCaps</th>
-                        <th>Stabilizers</th>
-                        <th>Price</th>
-                        <th>Size</th>
+                        <th className="text-primary mb-1">ID #</th>
+                        <th className="text-primary mb-1">Models</th>
+                        <th className="text-primary mb-1">Switches</th>
+                        <th className="text-primary mb-1">KeyCaps</th>
+                        <th className="text-primary mb-1">Stabilizers</th>
+                        <th className="text-primary mb-1">Price</th>
+                        <th className="text-primary mb-1">Size</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,7 +67,6 @@ const ShowKeyboard0 = () => {
                             </tr>
                         )
                     })}
-
                 </tbody>
             </Table>
         </div>
