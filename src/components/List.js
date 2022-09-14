@@ -18,19 +18,19 @@ function List(props) {
     return (
         <ul>
             {filteredData.map((item) => (
-                <li className="justify-content-center" key={item.id}>
+                <li className="justify-content-center nav nav-masthead" key={item.id}>
                 <br/>
-                {item.brand}
+                Name: {item.brand}
                 <br/>
-                {item.switches}
+                Switch Type: {item.switches}
                 <br/>
-                {item.keycaps}
+                Keycaps: {item.keycaps}
                 <br/>
-                {item.stabilizers}
+                Stabilizers: {item.stabilizers}
                 <br/>
-                {item.price}
+                Layout: {item.size}
                 <br/>
-                {item.size}
+                Price:{item.price}
                 <br/>
                 </li>
                 
