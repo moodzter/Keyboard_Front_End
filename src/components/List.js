@@ -11,13 +11,14 @@ function List(props) {
             return L;
         }
         else {
-            return L.text.toLowerCase().includes(props.input)
+            // return L.data.toLowerCase().includes?(props.input) : L.data?.toLowercase();
+            return L.input.toLowerCase().includes(props.input)
         }
     })
     return (
         <ul>
             {filteredData.map((item) => (
-                <li key={item.id}>
+                <li className="justify-content-center" key={item.id}>
                 <br/>
                 {item.brand}
                 <br/>
