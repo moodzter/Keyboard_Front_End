@@ -11,25 +11,26 @@ function List(props) {
             return L;
         }
         else {
-            return L.text.toLowerCase().includes(props.input)
+            return L.text?.toLowerCase().includes(props.input);
+            // return L.input?.toLowerCase().includes(props.input)
         }
     })
     return (
         <ul>
             {filteredData.map((item) => (
-                <li key={item.id}>
+                <li className="justify-content-center nav nav-masthead" key={item.id}>
                 <br/>
-                {item.brand}
+                Keyboard: {item.brand}
                 <br/>
-                {item.switches}
+                Switch Type: {item.switches}
                 <br/>
-                {item.keycaps}
+                Stabilizers: {item.stabilizers}
                 <br/>
-                {item.stabilizers}
+                Keycaps: {item.keycaps}
                 <br/>
-                {item.price}
+                Layout: {item.size}
                 <br/>
-                {item.size}
+                Price:{item.price}
                 <br/>
                 </li>
                 
