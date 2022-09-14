@@ -1,20 +1,21 @@
 import { React, useState } from "react";
 import TextField from "@mui/material/TextField";
-import List from "./components/List";
-import Footer from './components/Footer';
-import Header from './components/Header';
-import "./src/sbar.css";
+import List from "./List";
+// import Footer from './Footer';
+// import Header from './Header';
+// import "./sbar.css";
 
 function SearchBar() {
     const [inputText, setInputText] = useState("");
-    let inputHandler = (e) => {
-        var lowerCase = e.target.value.toLowerCase();
+    let inputHandler = (event) => {
+        // i might change it to uppercase
+        var lowerCase = event.target.value.toLowerCase();
         setInputText(lowerCase);
     };
 
     return( 
         <div className="main">
-           <Header/>
+           
             <div className="search">
             <TextField 
             id="outlined-basic"
@@ -25,7 +26,7 @@ function SearchBar() {
             />
             </div>
         <List input={inputText} />
-        <Footer/>
+        
         </div>
     );
 }

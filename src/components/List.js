@@ -1,8 +1,12 @@
 import { React, useState } from 'react'
-import data from "./ListData.JSON"
+import data from "./ListData.json"
+
+
 
 function List(props) {
+
     const filteredData = data.filter((L) => {
+        
         if (props.input === '') {
             return L;
         }
@@ -13,14 +17,23 @@ function List(props) {
     return (
         <ul>
             {filteredData.map((item) => (
-                <li hidden key={item.id}>
-                    <li>{item.brand}</li>
-                    <li>{item.switches}</li>
-                    <li>{item.keycaps}</li>
-                    <li>{item.stabilizers}</li>
-                    <li>{item.price}</li>
-                    <li>{item.size}</li>
-                    </li>
+                <li key={item.id}>
+                <br/>
+                {item.brand}
+                <br/>
+                {item.switches}
+                <br/>
+                {item.keycaps}
+                <br/>
+                {item.stabilizers}
+                <br/>
+                {item.price}
+                <br/>
+                {item.size}
+                <br/>
+                </li>
+                
+                
             ))}
         </ul>
     )
