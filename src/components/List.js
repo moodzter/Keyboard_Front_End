@@ -1,12 +1,19 @@
 import { React, useState } from 'react'
-import { List } from 'reactstrap'
 import data from "./ListData.JSON"
 
 function List(props) {
+    const filteredData = data.filter((L) => {
+        if (props.input === '') {
+            return L;
+        }
+        else {
+            return L.text.toLowerCase().includes(props.input)
+        }
+    })
     return (
         <ul>
-            {data.map((item) => (
-                <li key={item.id}>
+            {filteredData.map((item) => (
+                <li hidden key={item.id}>
                     <li>{item.brand}</li>
                     <li>{item.switches}</li>
                     <li>{item.keycaps}</li>

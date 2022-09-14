@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState} from 'react';
 
 const Edit = (props) => {
   const [keyboard, setKeyboard] = useState({...props.keyboard})
@@ -49,7 +49,7 @@ const Edit = (props) => {
   )
 }
 
-export default Edit
+export default Edit;
 
 
 // const handleUpdate = (editKeyboard) => {
