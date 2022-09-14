@@ -1,81 +1,81 @@
 [{
     "id": 1,
-    "brand": "Keychron K8",
+    "brand": "Keychron K8 - RGB",
     "switches": "Gateron Browns",
     "keycaps": "KK8",
     "stabilizers": "Keychron",
     "price": "100",
     "size": "TKL"
 }, {
-    "id": 1,
-    "brand": "Keychron ",
+    "id": 2,
+    "brand": "Keychron K2 - RGB",
     "switches": "Gateron Reds",
-    "keycaps": "KK3",
+    "keycaps": "KK2",
     "stabilizers": "Keychron",
     "price": "90",
+    "size": "75%"
+}, {
+    "id": 3,
+    "brand": "Keychron K3 - NRGB",
+    "switches": "Gateron Browns",
+    "keycaps": "KK3",
+    "stabilizers": "Keychron",
+    "price": "80",
     "size": "75% Low-Profile"
 }, {
-    "id": 1,
-    "brand": "Keychron",
-    "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "id": 4,
+    "brand": "Keychron K4 - NRGB",
+    "switches": "Gateron Ink-Blacks",
+    "keycaps": "KK4",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
+    "price": "120",
+    "size": "96%"
 }, {
-    "id": 1,
-    "brand": "Keychron",
+    "id": 5,
+    "brand": "Keychron K10 - RGB",
     "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "keycaps": "KK10",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
+    "price": "150",
+    "size": "Full-Size"
 }, {
-    "id": 1,
-    "brand": "Keychron",
-    "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "id": 6,
+    "brand": "Keychron K6 - RGB",
+    "switches": "Gateron Blues",
+    "keycaps": "KK6",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
+    "price": "110",
+    "size": "65%"
 }, {
-    "id": 1,
-    "brand": "Keychron",
+    "id": 7,
+    "brand": "Keychron K12 - RGB",
     "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "keycaps": "KK12",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
+    "price": "75",
+    "size": "60%"
 }, {
-    "id": 1,
-    "brand": "Keychron",
-    "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "id": 8,
+    "brand": "Keychron K14 - NRGB",
+    "switches": "Gateron Reds",
+    "keycaps": "KK14",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
+    "price": "85",
+    "size": "70%"
 }, {
-    "id": 1,
-    "brand": "Keychron",
-    "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "id": 9,
+    "brand": "Keychron Q1 | QMK - RGB",
+    "switches": "Gateron Black-Inks",
+    "keycaps": "Q1",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
+    "price": "225",
+    "size": "75%"
 }, {
-    "id": 1,
-    "brand": "Keychron",
-    "switches": "Gateron Browns",
-    "keycaps": "KK8",
+    "id": 10,
+    "brand": "Keychron Q3 | QMK - RGB",
+    "switches": "Gateron Black-Inks",
+    "keycaps": "Q3",
     "stabilizers": "Keychron",
-    "price": "100",
-    "size": "TKL"
-}, {
-    "id": 1,
-    "brand": "Keychron",
-    "switches": "Gateron Browns",
-    "keycaps": "KK8",
-    "stabilizers": "Keychron",
-    "price": "100",
+    "price": "285",
     "size": "TKL"
 }] 

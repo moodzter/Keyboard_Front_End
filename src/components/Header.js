@@ -1,11 +1,11 @@
 import React from "react";
-import CreateKeyboard from "./CreateKeyboard";
+// import CreateKeyboard from "./CreateKeyboard";
 
 //constants are at the bottom
 
 const Header = ({
-	handleNewKeyboard,
-    toggleNewK,
+	// handleNewKeyboard,
+    // toggleNewK,
 }) => {
 	return (
 		<div>
@@ -23,23 +23,23 @@ const Header = ({
 							Home
 						</a>
 
-						<p
-							className='nav-link fw-bold py-1 px-0'
+						{/* <p className='nav-link fw-bold py-1 px-0'
 							onClick={() => {
 								cardToggleNew();
-							}}
-						>
-							New Build
-						</p>
+							}}> New Build </p>
 
 						{toggleNewK ? (
 							<CreateKeyboard
 								handleNew={handleNewKeyboard}
 							/>
-						) : null}
+						) : null} */}
 
 						<a className='nav-link fw-bold py-1 px-0' href='/search.html'>
-							Search
+							Google Search
+						</a>
+
+						<a className='nav-link fw-bold py-1 px-0' href='/sbar.html'>
+							Keyboard Database
 						</a>
 
 						<a
@@ -50,7 +50,7 @@ const Header = ({
 							rel='noreferrer'
 						>
 							{" "}
-							<p>Backend Git</p>
+							<p> Backend Git</p>
 						</a>
 						<a
 							className='nav-link fw-bold py-1 px-0'
@@ -60,7 +60,7 @@ const Header = ({
 							rel='noreferrer'
 						>
 							{" "}
-							<p>Frontend Git</p>
+							<p> Frontend Git</p>
 						</a>
 						<a
 							className='nav-link fw-bold py-1 px-0'
@@ -70,7 +70,7 @@ const Header = ({
 							rel='noreferrer'
 						>
 							{" "}
-							<p>Nick Moody</p>
+							<p> Nick Moody</p>
 						</a>
 						<a
 							className='nav-link fw-bold py-1 px-0'
@@ -80,7 +80,8 @@ const Header = ({
 							rel='noreferrer'
 						>
 							{" "}
-							<p>Mitchell Garrison</p>
+							<p> Mitchell Garrison</p>
+							
 						</a>
 						<a
 							className='nav-link fw-bold py-1 px-0'

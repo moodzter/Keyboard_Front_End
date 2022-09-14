@@ -1,23 +1,35 @@
-import {React, useState} from "react";
-import TextField from "@mui/material/Textfield";
-import List from "./components/Item List"
-import "./App.css";
+import { React, useState } from "react";
+import TextField from "@mui/material/TextField";
+import List from "./components/List";
+import Footer from './components/Footer';
+import Header from './components/Header';
+import "./src/sbar.css";
 
-function App() {
+function SearchBar() {
+    const [inputText, setInputText] = useState("");
+    let inputHandler = (e) => {
+        var lowerCase = e.target.value.toLowerCase();
+        setInputText(lowerCase);
+    };
+
     return( 
         <div className="main">
-           <h1> Database Search </h1> 
+           <Header/>
             <div className="search">
             <TextField 
             id="outlined-basic"
+            onChange={inputHandler}
             variant="outlined"
             fullWidth
             label="Search"
             />
             </div>
-        <List/>
+        <List input={inputText} />
+        <Footer/>
         </div>
     );
 }
 
-export default App;
+
+
+export default SearchBar;
