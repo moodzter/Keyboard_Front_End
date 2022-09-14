@@ -20,13 +20,13 @@ function List(props) {
             {filteredData.map((item) => (
                 <li className="justify-content-center nav nav-masthead" key={item.id}>
                 <br/>
-                Name: {item.brand}
+                Keyboard: {item.brand}
                 <br/>
                 Switch Type: {item.switches}
                 <br/>
-                Keycaps: {item.keycaps}
-                <br/>
                 Stabilizers: {item.stabilizers}
+                <br/>
+                Keycaps: {item.keycaps}
                 <br/>
                 Layout: {item.size}
                 <br/>
