@@ -9,7 +9,7 @@ const CreateKeyboard = ({}) => {
         axios
         .post('http://localhost:8000/api/keyboards', addKeyboard)
         .then((response) => {
-            setKeyoard([...people, response.data])
+            console.log('successfully added')
         })
     }
     let emptyKeyboard = {
