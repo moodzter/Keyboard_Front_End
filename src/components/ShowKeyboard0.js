@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import {Table, Button} from 'reactstrap';
 import axios from "axios";
-import Button from 'react-bootstrap/Button';
 import Edit from './Edit';
 // import Board0 from './components/Board0';
     
@@ -96,7 +95,6 @@ const ShowKeyboard0 = () => {
 
 export default ShowKeyboard0
 
-{/* <Button className='btn btn-danger' onClick={() => {handleDelete(keyboard)}} value={keyboard.id}>DELETE</Button> */}
 
 // brand = 
 //     models.CharField(max_length=24)
