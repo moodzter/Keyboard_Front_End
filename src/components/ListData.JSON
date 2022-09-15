@@ -79,4 +79,12 @@
     "stabilizers": "Keychron",
     "price": "285",
     "size": "TKL"
+}, {
+    "id": 11,
+    "brand": "Ducky K2 - RGB",
+    "switches": "Aquaking V3",
+    "keycaps": "GMK Ice",
+    "stabilizers": "GMMK",
+    "price": "90",
+    "size": "75%"
 }] 

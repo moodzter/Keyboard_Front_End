@@ -11,7 +11,15 @@ function List(props) {
             return L;
         }
         else {
-            return L.text?.toLowerCase().includes(props.input);
+            return (
+                L.price.toLowerCase().includes(props.input) ||
+                L.size.toString().toLowerCase().includes(props.input) ||
+                L.keycaps.toString().toLowerCase().includes(props.input) ||
+                L.switches.toString().toLowerCase().includes(props.input) ||
+                L.brand.toString().toLowerCase().includes(props.input) ||
+                L.stabilizers.toString().toLowerCase().includes(props.input)
+                
+            );
             // return L.input?.toLowerCase().includes(props.input)
         }
     })
@@ -30,7 +38,7 @@ function List(props) {
                 <br/>
                 Layout: {item.size}
                 <br/>
-                Price:{item.price}
+                Price: {item.price}
                 <br/>
                 </li>
                 
