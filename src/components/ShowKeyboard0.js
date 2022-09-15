@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import {Table} from 'reactstrap';
 import axios from "axios";
+import Button from 'react-bootstrap/Button';
+import Edit from './Edit';
 // import Board0 from './components/Board0';
     
 const ShowKeyboard0 = () => {
-    const [board, setBoard] = useState([])
+    // const [board, setBoard] = useState([])
+    const [keyboard, setKeyboard] = useState([])
     // pagination code:
     // const [loading, setLoading] = useState(false);
     // const [currentPage, setCurrentPage] = useState(1);
@@ -14,12 +17,20 @@ const ShowKeyboard0 = () => {
         axios   
             .get('http://localhost:8000/api/keyboards')
             .then (
-                (response) => setBoard(response.data),
+                (response) => setKeyboard(response.data),
                 (err) => console.error(err)
             )
             .catch((error) => console.error(error))
     }
 
+    const handleUpdate = (editKeyboard) => {
+        axios.put('http://localhost:8000/api/keyboards/' + editKeyboard.id, editKeyboard)
+        .then((response) => {
+          setKeyboard(keyboard.map((keyboard) => {
+            return keyboard.id !== editKeyboard.id ? keyboard : editKeyboard
+          }))
+        })
+      }
     // pagination code:
     // const fetchBoards = async () => {
     //     setLoading(true);
@@ -54,7 +65,7 @@ const ShowKeyboard0 = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {board.map((keyboard) => {
+                    {keyboard.map((keyboard) => {
                         return (
                             <tr>
                                 <th scope="row">{keyboard.id}</th>
@@ -64,6 +75,7 @@ const ShowKeyboard0 = () => {
                                 <td>{keyboard.stabilizers}</td>
                                 <td>{keyboard.price}</td>
                                 <td>{keyboard.size}</td>
+                                <td> <Edit handleUpdate={handleUpdate} keyboard={keyboard}/> </td>
                             </tr>
                         )
                     })}
@@ -75,6 +87,7 @@ const ShowKeyboard0 = () => {
 
 export default ShowKeyboard0
 
+{/* <Button className='btn btn-danger' onClick={() => {handleDelete(keyboard)}} value={keyboard.id}>DELETE</Button> */}
 
 // brand = 
 //     models.CharField(max_length=24)
