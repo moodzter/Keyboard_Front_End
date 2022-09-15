@@ -12,6 +12,12 @@ const CreateKeyboard = ({}) => {
             console.log('successfully added')
         })
     }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        handleCreate(keyboard)
+        setKeyboard(emptyKeyboard)
+    }
     let emptyKeyboard = {
         brand: '',
         switches: '', 
@@ -28,34 +34,32 @@ const CreateKeyboard = ({}) => {
     }
     return (
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Brand:</label>
-                <input type ='text' name='' onChange={handleChange}/>
+                <input type ='text' name='brand' onChange={handleChange}/>
                 <br/>
                 <br/>
                 <label>Switches:</label>
-                <input type ='text' name='' onChange={handleChange}/>
+                <input type ='text' name='switches' onChange={handleChange}/>
                 <br/>
                 <br/>
                 <label>Keycaps:</label>
-                <input type ='text' name='' onChange={handleChange}/>
+                <input type ='text' name='keycaps' onChange={handleChange}/>
                 <br/>
                 <br/>
                 <label>Stabilizers:</label>
-                <input type ='text' name='' onChange={handleChange}/>
+                <input type ='text' name='stabilizers' onChange={handleChange}/>
                 <br/>
                 <br/>
                 <label>Price:</label>
-                <input type ='text' name='' onChange={handleChange}/>
+                <input type ='number' name='price' onChange={handleChange}/>
                 <br/>
                 <br/>
                 <label>Size:</label>
-                <input type='text' name='' onChange={handleChange}/>
+                <input type='text' name='size' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label>IMG URL:</label>
-                <input type ='text' name='' onChange={handleChange}/>
-                <input type ='submit' onClick={handleCreate} value='SUBMIT'/>
+                <input type ='submit' value='SUBMIT'/>
             </form>
         </div>
     );
