@@ -81,10 +81,169 @@
     "size": "TKL"
 }, {
     "id": 11,
-    "brand": "Ducky K2 - RGB",
+    "brand": "Ducky One 3 - RGB",
     "switches": "Aquaking V3",
     "keycaps": "GMK Ice",
-    "stabilizers": "GMMK",
+    "stabilizers": "Stabs",
     "price": "90",
+    "size": "60%"
+}, {
+    "id": 12,
+    "brand": "Ducky One 2 - RGB",
+    "switches": "Holy Pandas",
+    "keycaps": "Banana Minions",
+    "stabilizers": "Ducky",
+    "price": "335",
+    "size": "TKL"
+}, {
+    "id": 13,
+    "brand": "Whomier RR5",
+    "switches": "Cherry Reds",
+    "keycaps": "Black Dragon",
+    "stabilizers": "Wooting",
+    "price": "200",
     "size": "75%"
+}, {
+    "id": 14,
+    "brand": "Red Dragon",
+    "switches": "Cherry Clears",
+    "keycaps": "Amazon Basics Pudding Caps",
+    "stabilizers": "Amazon Basics",
+    "price": "80",
+    "size": "75% Low-Profile"
+}, {
+    "id": 15,
+    "brand": "Glorious Keyboards x GMK",
+    "switches": "Holy Pandas",
+    "keycaps": "GMK x Supreme",
+    "stabilizers": "Keychron",
+    "price": "535",
+    "size": "TKL"
+}, {
+    "id": 18,
+    "brand": "Keychron Q2",
+    "switches": "Gateron Browns",
+    "keycaps": "KK10",
+    "stabilizers": "Keychron + Tempest Mod + Lube",
+    "price": "345",
+    "size": "75%"
+}, {
+    "id": 19,
+    "brand": "Keychron K1 - RGB",
+    "switches": "Gateron Blues",
+    "keycaps": "KK1",
+    "stabilizers": "Keychron",
+    "price": "70",
+    "size": "TKL"
+}, {
+    "id": 20,
+    "brand": "Keychron K3 V2 - RGB",
+    "switches": "Gateron Browns",
+    "keycaps": "KK3",
+    "stabilizers": "Keychron",
+    "price": "80",
+    "size": "75% - Low Profile"
+}, {
+    "id": 21,
+    "brand": "Razer - Huntsman ",
+    "switches": "Cherry Silver Speeds",
+    "keycaps": "Razer Pudding Caps",
+    "stabilizers": "Razer",
+    "price": "115",
+    "size": "60%"
+}, {
+    "id": 22,
+    "brand": "Razer - Pro Type ",
+    "switches": "Gateron Black-Inks",
+    "keycaps": "Smoke Translucent",
+    "stabilizers": "Razer",
+    "price": "225",
+    "size": "75%"
+}, {
+    "id": 23,
+    "brand": "Keychron Q4 | QMK - RGB",
+    "switches": "Gateron Black-Inks",
+    "keycaps": "Q4",
+    "stabilizers": "Keychron",
+    "price": "385",
+    "size": "TKL"
+}, {
+    "id": 24,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
 }] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
