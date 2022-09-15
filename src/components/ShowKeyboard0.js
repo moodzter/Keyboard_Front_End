@@ -11,14 +11,12 @@ const ShowKeyboard0 = () => {
     const [dialog, setDialog] = useState({
         message: "",
         isLoading: false,
-        nameKeyboard: ""
     })
     const idBoardRef = useRef()
-    const handleDialog = (message, isLoading, nameKeyboard) => {
+    const handleDialog = (message, isLoading) => {
         setDialog({
             message,
-            isLoading,
-            nameKeyboard
+            isLoading
         })
     }
     // pagination code:
@@ -47,31 +45,28 @@ const ShowKeyboard0 = () => {
     const handleUpdate = (editKeyboard) => {
         axios.put('http://localhost:8000/api/keyboards/' + editKeyboard.id, editKeyboard)
         .then((response) => {
-          setKeyboard(keyboard.map((keyboard) => {
+        setKeyboard(keyboard.map((keyboard) => {
             return keyboard.id !== editKeyboard.id ? keyboard : editKeyboard
-          }))
+            }))
         })
-      }
+    }
 
-    const handleDelete = (event) => {
-        idBoardRef.current=event.target.value;
-        setDialog({ 
-            message:"Are you sure you want to delete?",
-            isLoading:true
-        })
-      }
+    const handleDelete = (id) => {
+        idBoardRef.current= id;
+        handleDialog('Are you sure you want to delete?', true)
+    }
 
 
     const rUSureRemove = (choose) => {
         // handleDialog("Are you sure you want to REMOVE?",true);
         if(choose) {
-            axios.delete('http://localhost:8000/api/keyboards/' + idBoardRef)
+            axios.delete('http://localhost:8000/api/keyboards/' + idBoardRef.current)
             .then((response) => {
-              getBoard()
+            getBoard()
             })
-            handleDialog("",false);
+            handleDialog('potato', false);
         }else{
-            handleDialog("",false);
+            handleDialog('potato', false);
         }
     }
 
@@ -112,7 +107,7 @@ const ShowKeyboard0 = () => {
                                 <td>{keyboard.price}</td>
                                 <td>{keyboard.size}</td>
                                 <td> <Edit handleUpdate={handleUpdate} keyboard={keyboard}/> </td>
-                                <Button onClick={handleDelete} color="info" value={keyboard.id}>REMOVE</Button>
+                                <Button onClick={() => {handleDelete(keyboard.id)}} color="info">REMOVE</Button>
                             </tr>
                         )
                     })}
