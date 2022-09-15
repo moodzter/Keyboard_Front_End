@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import data from "./ListData.json"
+import data from "./ListData.JSON"
 
 
 
