@@ -7,7 +7,8 @@ import List from "./List";
 
 function SearchBar() {
     const [inputText, setInputText] = useState("");
-    let inputHandler = (e) => {
+    const inputHandler = (e) => {
+        
         // i might change it to uppercase
         let lowerCase = e.target.value.toLowerCase();
         setInputText(lowerCase);
@@ -19,7 +20,7 @@ function SearchBar() {
             <div className="search">
             <TextField 
             id="outlined-basic"
-            onChange={inputHandler}
+            onChange= {inputHandler}
             variant="outlined"
             fullWidth
             label="Search"

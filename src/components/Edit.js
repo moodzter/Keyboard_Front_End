@@ -3,8 +3,9 @@ import {useState} from 'react';
 const Edit = (props) => {
   const [keyboard, setKeyboard] = useState({...props.keyboard})
 
+
   const handleChange = (event) => {
-    setKeyboard({...keyboard, [event.target.brand]: event.target.value})
+    setKeyboard({...keyboard, [event.target.name]: event.target.value})
   }
 
   const handleSubmit = (event) => {
@@ -18,8 +19,8 @@ const Edit = (props) => {
       <details>
         <summary>Edit Keyboard Build</summary>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Keyboard: </label>
-          <input type="text" name="name" value={keyboard.brand} onChange={handleChange} />
+          <label htmlFor="brand">Keyboard: </label>
+          <input type="text" name="brand" value={keyboard.brand} onChange={handleChange} />
           <br />
           <br />
           <label htmlFor="switches">Switches: </label>
@@ -52,11 +53,3 @@ const Edit = (props) => {
 export default Edit;
 
 
-// const handleUpdate = (editKeyboard) => {
-//     axios.put('http://localhost:8000/api/keyboards/' + editKeyboard.id, editKeyboard)
-//     .then((response) => {
-//       setKeyboard(keyboard.map((keyboard) => {
-//         return keyboard.id !== editKeyboard.id ? keyboard : editKeyboard
-//       }))
-//     })
-//   }
