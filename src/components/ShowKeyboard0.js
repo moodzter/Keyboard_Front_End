@@ -73,8 +73,8 @@ const ShowKeyboard0 = () => {
                                     <td>{keyboard.stabilizers}</td>
                                     <td>{keyboard.price}</td>
                                     <td>{keyboard.size}</td>
-                                </tr>
                                     <Button onClick={handleDelete} color="info" value={keyboard.id}>REMOVE</Button>
+                                </tr>
                             </>
                         )
                     })}
