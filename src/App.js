@@ -4,7 +4,7 @@ import CreateKeyboard from './components/CreateKeyboard';
 import ShowKeyboard0 from './components/ShowKeyboard0';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import SearchBar from './components/SBar';
+// import SearchBar from './components/SBar';
 
 
 
@@ -29,7 +29,6 @@ function App() {
 
       <CreateKeyboard/>
       <ShowKeyboard0/>
-      <SearchBar/>
       <Footer/>
     </div>
     
