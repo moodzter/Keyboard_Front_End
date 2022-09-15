@@ -6,9 +6,8 @@ import data from "./ListData.json"
 function List(props) {
 
     const filteredData = data.filter((L) => {
-        
         if (props.input === '') {
-            return L;
+            return ;
         }
         else {
             return (
