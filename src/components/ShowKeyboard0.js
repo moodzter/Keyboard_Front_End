@@ -1,13 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {Table, Button} from 'reactstrap';
-import axios from "axios";
+import axios from 'axios';
 import Edit from './Edit';
-// import Board0 from './components/Board0';
+import Dialog from './Dialog';
+import Board0 from './Board0';
     
 const ShowKeyboard0 = () => {
     // const [board, setBoard] = useState([])
     const [keyboard, setKeyboard] = useState([])
-    
+    const [dialog, setDialog] = useState({
+        message: "",
+        isLoading: false,
+        nameKeyboard: ""
+    })
+    const idBoardRef = useRef()
+    const handleDialog = (message, isLoading, nameKeyboard) => {
+        setDialog({
+            message,
+            isLoading,
+            nameKeyboard
+        })
+    }
     // pagination code:
     // const [loading, setLoading] = useState(false);
     // const [currentPage, setCurrentPage] = useState(1);
@@ -23,14 +36,6 @@ const ShowKeyboard0 = () => {
             .catch((error) => console.error(error))
     }
 
-    const handleUpdate = (editKeyboard) => {
-        axios.put('http://localhost:8000/api/keyboards/' + editKeyboard.id, editKeyboard)
-        .then((response) => {
-          setKeyboard(keyboard.map((keyboard) => {
-            return keyboard.id !== editKeyboard.id ? keyboard : editKeyboard
-          }))
-        })
-      }
     // pagination code:
     // const fetchBoards = async () => {
     //     setLoading(true);
@@ -39,12 +44,36 @@ const ShowKeyboard0 = () => {
     //     setLoading(false);
     // }
 
-    const handleDelete = (event) => {
-        axios.delete('http://localhost:8000/api/keyboards/' + event.target.value)
+    const handleUpdate = (editKeyboard) => {
+        axios.put('http://localhost:8000/api/keyboards/' + editKeyboard.id, editKeyboard)
         .then((response) => {
-          getBoard()
+          setKeyboard(keyboard.map((keyboard) => {
+            return keyboard.id !== editKeyboard.id ? keyboard : editKeyboard
+          }))
         })
       }
+
+    const handleDelete = (event) => {
+        idBoardRef.current=event.target.value;
+        setDialog({ 
+            message:"Are you sure you want to delete?",
+            isLoading:true
+        })
+      }
+
+
+    const rUSureRemove = (choose) => {
+        // handleDialog("Are you sure you want to REMOVE?",true);
+        if(choose) {
+            axios.delete('http://localhost:8000/api/keyboards/' + idBoardRef)
+            .then((response) => {
+              getBoard()
+            })
+            handleDialog("",false);
+        }else{
+            handleDialog("",false);
+        }
+    }
 
     useEffect(() => {
         getBoard();
@@ -87,6 +116,8 @@ const ShowKeyboard0 = () => {
                             </tr>
                         )
                     })}
+                    {dialog.isLoading && 
+                    <Dialog onDialog={rUSureRemove} message={dialog.message}/>}
                 </tbody>
             </Table>
         </div>
