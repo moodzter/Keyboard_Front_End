@@ -16,7 +16,7 @@ function SearchBar() {
 
     return( 
         <div className="main cover-container float-md ">
-           <h2>Keyboard Search</h2>
+           
             <div className="search">
             <TextField 
             id="outlined-basic"

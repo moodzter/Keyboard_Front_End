@@ -17,33 +17,33 @@ const Edit = (props) => {
   return (
     <>
       <details>
-        <summary>Edit Keyboard Build</summary>
-        <form onSubmit={handleSubmit}>
+        <summary className='btn btn-outline-warning'>Edit Build</summary>
+        <form className='form-control' onSubmit={handleSubmit}>
           <label htmlFor="brand">Keyboard: </label>
-          <input type="text" name="brand" value={keyboard.brand} onChange={handleChange} />
+          <input className='form-control' type="text" name="brand" value={keyboard.brand} onChange={handleChange} />
           <br />
           <br />
           <label htmlFor="switches">Switches: </label>
-          <input type="text" name="switches" value={keyboard.switches} onChange={handleChange}/>
+          <input className='form-control' type="text" name="switches" value={keyboard.switches} onChange={handleChange}/>
           <br />
           <br />
           <label htmlFor="keycaps">Keycaps: </label>
-          <input type="text" name="keycaps" value={keyboard.keycaps} onChange={handleChange}/>
+          <input className='form-control' type="text" name="keycaps" value={keyboard.keycaps} onChange={handleChange}/>
           <br />
           <br />
           <label htmlFor="stabilizers">Stabilizers: </label>
-          <input type="text" name="stabilizers" value={keyboard.stabilizers} onChange={handleChange}/>
+          <input className='form-control' type="text" name="stabilizers" value={keyboard.stabilizers} onChange={handleChange}/>
           <br />
           <br />
           <label htmlFor="price">Price: </label>
-          <input type="number" name="price" value={keyboard.price} onChange={handleChange}/>
+          <input className='form-control' type="number" name="price" value={keyboard.price} onChange={handleChange}/>
           <br />
           <br />
           <label htmlFor="size">Keyboard Size: </label>
-          <input type="text" name="size" value={keyboard.size} onChange={handleChange}/>
+          <input className='form-control' type="text" name="size" value={keyboard.size} onChange={handleChange}/>
           <br />
           <br />
-          <input type="submit"/>
+          <input className='btn btn-outline-success' type="submit"/>
         </form>
       </details>
     </>
