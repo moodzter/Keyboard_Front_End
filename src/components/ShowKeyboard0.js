@@ -53,7 +53,7 @@ const ShowKeyboard0 = () => {
 
     const handleDelete = (id) => {
         idBoardRef.current= id;
-        handleDialog('Are you sure you want to delete?', true)
+        handleDialog("Are you sure you want to REMOVE Keyboard from 'Saved Builds'?", true)
     }
 
 
