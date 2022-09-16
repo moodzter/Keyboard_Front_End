@@ -1,26 +1,16 @@
-import { React, useState, useRef } from 'react'
-
+import { React, useState } from 'react'
+import {Button} from 'reactstrap'
 import data from "./ListData.json"
 import axios from 'axios'
-import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 function List(props) {
 
-    const selectedKeyboard = useRef()
-
-    const handleCreate = (event) => {
-        
+    const handleCreate = (item) => {
         axios
-        .post('http://localhost:8000/api/keyboards', selectedKeyboard)
+        .post('http://localhost:8000/api/keyboards', item)
         .then((response) => {
             console.log('successfully added')
         })
-    }
-
-    const handlePotato = (nKB) => {
-        selectedKeyboard.current = nKB
-        
     }
 
     // const handleSubmit = (event) => {
@@ -78,7 +68,9 @@ function List(props) {
                     <br />
                     Price: {item.price}
                     <br />
-                </li><form onSubmit={handleCreate}> <input onClick= {() => {handlePotato(item)}} type='submit'  value='Save to Builds' /></form></>
+                </li><form onSubmit={() => {handleCreate(item)}}>
+                    <Button color="info" input type='submit'>SAVE TO BUILDS</Button>
+                    </form></>
                 
                 
             ))}
