@@ -82,7 +82,7 @@ const ShowKeyboard0 = () => {
 
     return (
         <div>
-            <h1 className="text-primary mb-2 mt-2">Saved Builds</h1>
+            <h1 className="text-primary fw-bold mb-2 mt-2">Saved Builds</h1>
             <Table responsive>
                 <thead>
                     <tr>
