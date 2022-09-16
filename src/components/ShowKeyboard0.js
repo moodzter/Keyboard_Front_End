@@ -82,7 +82,7 @@ const ShowKeyboard0 = () => {
 
     return (
         <div>
-            <h1 className="text-primary mb-2 mt-2">Saved Builds</h1>
+            <h1 className="text-primary fw-bold mb-2 mt-2">Saved Builds</h1>
             <Table responsive>
                 <thead>
                     <tr>
@@ -106,8 +106,8 @@ const ShowKeyboard0 = () => {
                                 <td>{keyboard.stabilizers}</td>
                                 <td>{keyboard.price}</td>
                                 <td>{keyboard.size}</td>
-                                <td> <Edit handleUpdate={handleUpdate} keyboard={keyboard}/> </td>
-                                <Button onClick={() => {handleDelete(keyboard.id)}} color="info">REMOVE</Button>
+                                <td><Edit handleUpdate={handleUpdate} keyboard={keyboard}/></td>
+                                <td><Button onClick={() => {handleDelete(keyboard.id)}} color="info">REMOVE</Button></td>
                             </tr>
                         )
                     })}

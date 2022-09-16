@@ -34,7 +34,7 @@ const CreateKeyboard = ({}) => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form className="text-primary fw-bold" onSubmit={handleSubmit}>
                 <label>Brand:</label>
                 <input type ='text' name='brand' onChange={handleChange}/>
                 <br/>
@@ -59,7 +59,7 @@ const CreateKeyboard = ({}) => {
                 <input type='text' name='size' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <input type ='submit' value='SUBMIT'/>
+                <Button type='submit' color='info' value='SUBMIT'>SAVE BUILD</Button>
             </form>
         </div>
     );

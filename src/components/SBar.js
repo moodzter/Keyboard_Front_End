@@ -29,7 +29,7 @@ function SearchBar() {
             onChange= {inputHandler}
             variant="outlined"
             fullWidth
-            label="Search"
+            label="Search Keyboards"
             />
             </div>
 
