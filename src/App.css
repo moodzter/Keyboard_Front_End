@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body{
+  background-color: #7ee8fa;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,8 +45,8 @@ lb{border:0;border-top:1px solid gray;margin:20px 0}
 
 h2 {
   margin: 10px;
-  font-size: 40px;
-  color: rgb(1, 1, 59);
+  font-size: 4em;
+  color: #2e5eaa;
 }
 
 .search {

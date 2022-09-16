@@ -12,12 +12,12 @@ const Header = ({
 		<div>
 			<header className='mb-auto'>
 				<div>
-					<h2 className='nav nav-masthead justify-content-center float-md'>
+					<h2 className='text-primary nav nav-masthead justify-content-center float-md'>
 								Keyboard Part Picker
 					</h2>
 					<nav className='nav nav-masthead justify-content-center float-md'>
 						<a
-							className='nav-link fw-bold py-1 px-0 nav'
+							className='text-primary nav-link fw-bold py-1 px-0 nav'
 							aria-current='page'
 							href='/'
 						>
@@ -35,13 +35,13 @@ const Header = ({
 							/>
 						) : null} */}
 
-						<a className='nav-link fw-bold py-1 px-0' href='/search.html'>
+						<a className='text-primary nav-link fw-bold py-1 px-0' href='/search.html'>
 							Google Search
 						</a>
 
 
 						<a
-							className='nav-link fw-bold py-1 px-0'
+							className='text-primary nav-link fw-bold py-1 px-0'
 							href='https://github.com/moodzter/Keyboard_Back_End'
 							target='_blank'
 							type='button'
@@ -51,7 +51,7 @@ const Header = ({
 							<p> Backend Git</p>
 						</a>
 						<a
-							className='nav-link fw-bold py-1 px-0'
+							className='text-primary nav-link fw-bold py-1 px-0'
 							href='https://github.com/moodzter/Keyboard_Front_End'
 							target='_blank'
 							type='button'
@@ -61,7 +61,7 @@ const Header = ({
 							<p> Frontend Git</p>
 						</a>
 						<a
-							className='nav-link fw-bold py-1 px-0'
+							className='text-primary nav-link fw-bold py-1 px-0'
 							href='https://www.linkedin.com/in/nicholas-moody-44a3a0249/'
 							target='_blank'
 							type='button'
@@ -71,7 +71,7 @@ const Header = ({
 							<p> Nick Moody</p>
 						</a>
 						<a
-							className='nav-link fw-bold py-1 px-0'
+							className='text-primary nav-link fw-bold py-1 px-0'
 							href='https://www.linkedin.com/in/m-garrison/'
 							target='_blank'
 							type='button'
@@ -82,7 +82,7 @@ const Header = ({
 							
 						</a>
 						<a
-							className='nav-link fw-bold py-1 px-0'
+							className='text-primary nav-link fw-bold py-1 px-0'
 							href='https://www.linkedin.com/in/jesus-eduardo-prado/'
 							target='_blank'
 							type='button'

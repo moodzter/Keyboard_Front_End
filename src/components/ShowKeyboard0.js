@@ -106,8 +106,8 @@ const ShowKeyboard0 = () => {
                                 <td>{keyboard.stabilizers}</td>
                                 <td>{keyboard.price}</td>
                                 <td>{keyboard.size}</td>
-                                <td> <Edit handleUpdate={handleUpdate} keyboard={keyboard}/> </td>
-                                <Button onClick={() => {handleDelete(keyboard.id)}} color="info">REMOVE</Button>
+                                <td><Edit handleUpdate={handleUpdate} keyboard={keyboard}/></td>
+                                <td><Button onClick={() => {handleDelete(keyboard.id)}} color="info">REMOVE</Button></td>
                             </tr>
                         )
                     })}
