@@ -5,8 +5,6 @@ import SearchBar from "./SBar";
 //constants are at the bottom
 
 const Header = ({
-	// handleNewKeyboard,
-    // toggleNewK,
 }) => {
 	return (
 		<div>
@@ -24,21 +22,9 @@ const Header = ({
 							Home
 						</a>
 
-						{/* <p className='nav-link fw-bold py-1 px-0'
-							onClick={() => {
-								cardToggleNew();
-							}}> New Build </p>
-
-						{toggleNewK ? (
-							<CreateKeyboard
-								handleNew={handleNewKeyboard}
-							/>
-						) : null} */}
-
 						<a className='nav-link fw-bold py-1 px-0' href='/search.html'>
 							Google Search
 						</a>
-
 
 						<a
 							className='nav-link fw-bold py-1 px-0'
