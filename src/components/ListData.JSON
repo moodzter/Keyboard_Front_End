@@ -132,7 +132,7 @@
     "brand": "Keychron K1 - RGB",
     "switches": "Gateron Blues",
     "keycaps": "KK1",
-    "stabilizers": "Keychron",
+    "stabilizers": "Keychron V5",
     "price": "70",
     "size": "TKL"
 }, {
@@ -175,7 +175,417 @@
     "stabilizers": "Stock Lubed Stabs",
     "price": "90",
     "size": "60%"
+
+}, {
+    "id": 25,
+    "brand": "Halo65",
+    "switches": "G Pro Red 2.0",
+    "keycaps": "Shine-through ABS",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "115",
+    "size": "60%"
+}, {
+    "id": 26,
+    "brand": "Air75",
+    "switches": "Low-Profile Geteron Brown",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "DUROCK V2",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 27,
+    "brand": "Air60",
+    "switches": "Low-Profile Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "DUROCK V2",
+    "price": "129",
+    "size": "60%"
+}, {
+    "id": 28,
+    "brand": "TES68",
+    "switches": "Low-Profile Gateron Blue",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "DUROCK V2",
+    "price": "129",
+    "size": "85%"
+}, {
+    "id": 29,
+    "brand": "NuType F1",
+    "switches": "Gateron Red",
+    "keycaps": "Shine-through ABS",
+    "stabilizers": "DUROCK V2",
+    "price": "129",
+    "size": "85%"
+}, {
+    "id": 30,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "129",
+    "size": "85%"
+}, {
+    "id": 31,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "Air85 COAST PBT Keycaps",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "129",
+    "size": "85%"
+}, {
+    "id": 32,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "129",
+    "size": "60%"
+}, {
+    "id": 33,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "Air75 COAST PBT Keycaps",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 34,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 35,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 36,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 37,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "Shine-through ABS",
+    "stabilizers": "Owlstabs V2",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 38,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 39,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Baby Kangaroo Mechanical",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Owlstabs V2",
+    "price": "90",
+    "size": "60%"
+    }, {
+    "id": 40,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 41,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Blue",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 42,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 43,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "CIY",
+    "keycaps": "Air60 COAST PBT Keycaps",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 44,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Baby Kangaroo Mechanical",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 45,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Owlstabs V2",
+    "price": "145",
+    "size": "60%"
+}, {
+    "id": 46,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "Air60 COAST PBT Keycaps",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "145",
+    "size": "75%"
+}, {
+    "id": 47,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Cherry PCB Clip-In Stabs",
+    "price": "145",
+    "size": "75%"
+}, {
+    "id": 48,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Baby Kangaroo Mechanical",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Cherry PCB Clip-In Stabs",
+    "price": "155",
+    "size": "75%"
+}, {
+    "id": 49,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Super-Special Stab",
+    "price": "145",
+    "size": "100%"
+    }, {
+    "id": 50,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Cherry PCB Clip-In Stabs",
+    "price": "145",
+    "size": "75%"
+}, {
+    "id": 51,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Cherry PCB Clip-In Stabs",
+    "price": "160",
+    "size": "75%"
+}, {
+    "id": 52,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Baby Kangaroo Mechanical",
+    "keycaps": "Shine-through ABS",
+    "stabilizers": "Cherry PCB Clip-In Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 53,
+    "brand": "Ducky One",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 54,
+    "brand": "Turtle Boards",
+    "switches": "Aquaking V45",
+    "keycaps": "Air75 COAST PBT Keycaps",
+    "stabilizers": "Staby Stabs",
+    "price": "90",
+    "size": "60%"
+    }, {
+    "id": 55,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "Air75 COAST PBT Keycaps",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "299",
+    "size": "60%"
+}, {
+    "id": 56,
+    "brand": "Logitech",
+    "switches": "Gateron Blue",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 57,
+    "brand": "NACODEX AK510",
+    "switches": "Aquaking V45",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Plate Mounted",
+    "price": "599",
+    "size": "60%"
+}, {
+    "id": 58,
+    "brand": "POP wireless",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Plate Mounted",
+    "price": "110",
+    "size": "60%"
+}, {
+    "id": 59,
+    "brand": "HyperX Alloy",
+    "switches": "Gateron Brown",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Super-Special Stabs",
+    "price": "400",
+    "size": "60%"
+    }, {
+    "id": 60,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "Shine-through ABS 44z",
+    "stabilizers": "Plate Mounted",
+    "price": "99",
+    "size": "60%"
+}, {
+    "id": 61,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "Smoke",
+    "stabilizers": "Plate Mounted",
+    "price": "99",
+    "size": "80%"
+}, {
+    "id": 62,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "Aquaking V7.0",
+    "keycaps": "Smoke",
+    "stabilizers": "Zero Stabs",
+    "price": "90",
+    "size": "82%"
+}, {
+    "id": 63,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "AquaQueen",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "80%"
+}, {
+    "id": 64,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "AquaQueen",
+    "keycaps": "Air80 COAST PBT Keycapse",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "80%"
+    }, {
+    "id": 65,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "AquaQueen",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "90%"
+}, {
+    "id": 66,
+    "brand": "Ducky Three Mini - RGB",
+    "switches": "Gateron Blue",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "90",
+    "size": "80%"
+}, {
+    "id": 67,
+    "brand": "NuType F1",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Screw-In Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 68,
+    "brand": "NuType F13",
+    "switches": "Aquaking V45",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Screw-In Stabs",
+    "price": "90",
+    "size": "60%"
+}, {
+    "id": 69,
+    "brand": "NuType B77",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Screw-In Stabs",
+    "price": "119",
+    "size": "60%"
+}, {
+    "id": 70,
+    "brand": "NuType B87",
+    "switches": "Gateron Baby Kangaroo Mechanical",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "Screw-In Stabs",
+    "price": "119",
+    "size": "60%"
+}, {
+    "id": 71,
+    "brand": "NuType A1",
+    "switches": "Aquaking V2",
+    "keycaps": "Shine-through ABS",
+    "stabilizers": "Stock Lubed Stabs",
+    "price": "119",
+    "size": "60%"
+}, {
+    "id": 72,
+    "brand": "NuType F1",
+    "switches": "Aquaking V2",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "C3 Equalz PCB Screw-In Stabs",
+    "price": "119",
+    "size": "60%"
+}, {
+    "id": 73,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Red",
+    "keycaps": "Air60 COAST PBT Keycaps",
+    "stabilizers": "C3 Equalz PCB Screw-In Stabs",
+    "price": "119",
+    "size": "60%"
+}, {
+    "id": 74,
+    "brand": "Ducky One Mini - RGB",
+    "switches": "Gateron Brown",
+    "keycaps": "GMK Smoke",
+    "stabilizers": "C3 Equalz PCB Screw-In Stabs",
+    "price": "119",
+    "size": "60%"
+}, {
+    "id": 75,
+    "brand": "Ducky One - RGB",
+    "switches": "Aquaking V2",
+    "keycaps": "Air60 COAST PBT Keycaps",
+    "stabilizers": "C3 Equalz PCB Screw-In Stabs",
+    "price": "125",
+    "size": "80%"
 }] 
+
 
 
 
