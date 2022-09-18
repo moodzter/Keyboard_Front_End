@@ -100,7 +100,7 @@ const ShowKeyboard0 = () => {
                     {keyboards.map((keyboard, index) => {
                         
                         return (
-                            <tr>
+                            <tr className=" showRows ">
                                 <th scope="row">{index + 1}</th>
                                 <td>{keyboard.brand}</td>
                                 <td>{keyboard.switches}</td>
