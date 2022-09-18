@@ -18,7 +18,7 @@ const Edit = (props) => {
     <>
       <details>
         <summary className='btn btn-warning'>Edit Build</summary>
-        <form className='form-control' onSubmit={handleSubmit}>
+        <form className=' showRows form-control' onSubmit={handleSubmit}>
           <label htmlFor="brand">Keyboard: </label>
           <input className='form-control' type="text" name="brand" value={keyboard.brand} onChange={handleChange} />
           <br />

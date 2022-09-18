@@ -23,7 +23,7 @@ function SearchBar() {
     return( 
         <div className="main cover-container float-md ">
            
-            <div className="search">
+            <div className=" showRows search">
             <TextField 
             id="outlined-basic"
             onChange= {inputHandler}

@@ -117,3 +117,12 @@ ul li {
 /* .showContainer {
   background-color: white;
 } */
+
+.showRows {
+ background-color:#e5e5e5;
+ transition: background-color 0.5s;
+}
+
+.showRows:hover {
+  background-color:aliceblue;
+}
