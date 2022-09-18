@@ -1,13 +1,22 @@
+import { PropaneSharp } from "@mui/icons-material";
 import React from "react";
 import SearchBar from "./SBar";
+import { useState } from 'react'
 // import CreateKeyboard from "./CreateKeyboard";
 
 //constants are at the bottom
 
 const Header = ({
+	setShowForm,
+	setShowBuilds,
+	showBuilds,
+	showForm
 }) => {
+
+	let[showSB, setShowSB] = useState(true)
+
 	return (
-		<div>
+		<div className="showWrapper">
 			<header className='mb-auto'>
 				<div>
 					<h2 className='text-primary nav nav-masthead justify-content-center float-md'>
@@ -78,12 +87,28 @@ const Header = ({
 							{" "}
 							<p>Eduardo Prado</p>
 						</a>
+						<a
+							className='text-primary nav-link fw-bold py-1 px-0'
+							target='_blank'
+							type='button'
+							rel='noreferrer'
+							onClick={()=>{
+								setShowForm(!showForm)
+								setShowBuilds(!showBuilds)
+								setShowSB(!showSB)
+								}}
+						>
+							{" "}
+							<p>Create New Keyboard</p>
+						</a>
 
 						
 					</nav>
-					<nav className='nav nav-masthead justify-content-center float-md'><a className='nav-link fw-bold py-1 px-0'>
+					{showSB ?
+					<nav className='nav justify-content-center float-md'><a className='nav-link fw-bold py-1 px-0'>
 							<SearchBar/>
-						</a></nav>
+						</a></nav> 
+							: null}
 				</div>
 			</header>
 		</div>

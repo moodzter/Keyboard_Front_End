@@ -3,7 +3,12 @@ import axios from 'axios'
 import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
-const CreateKeyboard = ({}) => {
+const CreateKeyboard = ({
+    setShowForm,
+    setShowBuilds,
+    showForm,
+    showBuilds
+}) => {
     
     const handleCreate = (addKeyboard) => {
         axios
@@ -11,6 +16,8 @@ const CreateKeyboard = ({}) => {
         .then((response) => {
             console.log('successfully added')
         })
+        setShowForm(!showForm)
+        setShowBuilds(!showBuilds)
     }
 
     const handleSubmit = (event) => {
@@ -33,33 +40,34 @@ const CreateKeyboard = ({}) => {
         setKeyboard({ ...keyboard, [event.target.name]: event.target.value })
     }
     return (
-        <div>
+        <div className="createForm">
+            <h2>Create Keyboard</h2>
             <form className="text-primary fw-bold" onSubmit={handleSubmit}>
-                <label>Brand:</label>
+                <label className="createInput">Brand:</label>
                 <input type ='text' name='brand' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label>Switches:</label>
+                <label className="createInput">Switches:</label>
                 <input type ='text' name='switches' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label>Keycaps:</label>
+                <label className="createInput">Keycaps:</label>
                 <input type ='text' name='keycaps' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label>Stabilizers:</label>
+                <label className="createInput">Stabilizers:</label>
                 <input type ='text' name='stabilizers' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label>Price:</label>
+                <label className="createInput">Price:</label>
                 <input type ='number' name='price' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <label>Size:</label>
+                <label className="createInput">Size:</label>
                 <input type='text' name='size' onChange={handleChange}/>
                 <br/>
                 <br/>
-                <Button type='submit' color='info' value='SUBMIT'>SAVE BUILD</Button>
+                <Button type='submit' color='success' value='SUBMIT'>SAVE BUILD</Button>
             </form>
         </div>
     );
