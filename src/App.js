@@ -9,11 +9,28 @@ import './App.css';
 // import Button from 'react-bootstrap/Button';
 
 function App() {
+
+  let [showForm, setShowForm] = useState(false)
+  let [showBuilds, setShowBuilds] = useState(true)
   return (
     <div className='App'>
-      <Header/>
-      <CreateKeyboard/>
+      <Header 
+        setShowForm={setShowForm}
+        setShowBuilds={setShowBuilds}
+        showForm={showForm}
+        showBuilds={showBuilds}
+        />  
+      {showForm ? 
+      <CreateKeyboard
+        setShowForm={setShowForm}
+        setShowBuilds={setShowBuilds}
+        showForm={showForm}
+        showBuilds={showBuilds}
+        />
+      : null}
+      {showBuilds ? 
       <ShowKeyboard0/>
+      : null}
       <Footer/>
     </div>
   );

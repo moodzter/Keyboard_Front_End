@@ -52,7 +52,8 @@ function List(props) {
         }
     })
     return (
-        <ul>
+        <div>
+        <ul className="listWrapper">
             {filteredData.map((item) => (
                 <><li className="justify-content-center nav nav-masthead" key={item.id}>
                     <br />
@@ -69,12 +70,13 @@ function List(props) {
                     Price: {item.price}
                     <br />
                 </li><form onSubmit={() => {handleCreate(item)}}>
-                    <Button color="info" input type='submit'>SAVE TO BUILDS</Button>
+                    <Button color="primary" input type='submit'>SAVE TO BUILDS</Button>
                     </form></>
                 
                 
-            ))}
+                ))}
         </ul>
+        </div>
     )
 }
 

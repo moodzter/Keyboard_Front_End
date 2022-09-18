@@ -3,7 +3,7 @@
 }
 
 body{
-  background-color: #7ee8fa;
+  background-color: #e5e5e5;
 }
 
 .App-logo {
@@ -90,3 +90,30 @@ ul li {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+.createForm {
+  border: solid black .3em;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: 2em;
+  background-color: white;
+}
+
+.createForm h2 {
+  color: black;
+}
+
+.createInput {
+  margin: .5em;
+  color: black;
+}
+
+.listWrapper li {
+  color: black;
+}
+
+/* .showContainer {
+  background-color: white;
+} */

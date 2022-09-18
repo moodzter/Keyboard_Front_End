@@ -7,7 +7,7 @@ import Board0 from './Board0';
     
 const ShowKeyboard0 = () => {
     // const [board, setBoard] = useState([])
-    const [keyboard, setKeyboard] = useState([])
+    const [keyboards, setKeyboard] = useState([])
     const [dialog, setDialog] = useState({
         message: "",
         isLoading: false,
@@ -45,7 +45,7 @@ const ShowKeyboard0 = () => {
     const handleUpdate = (editKeyboard) => {
         axios.put('http://localhost:8000/api/keyboards/' + editKeyboard.id, editKeyboard)
         .then((response) => {
-        setKeyboard(keyboard.map((keyboard) => {
+        setKeyboard(keyboards.map((keyboard) => {
             return keyboard.id !== editKeyboard.id ? keyboard : editKeyboard
             }))
         })
@@ -75,18 +75,19 @@ const ShowKeyboard0 = () => {
         // fetchBoards();
     }, [])
 
+    let[rowNumber, setRowNumber] = useState(1)
     // get current posts for pagination
     // const indexOfLastBoard = currentPage * boardsPerPage;
     // const indexOfFirstBoard = indexOfLastBoard - boardsPerPage;
     // const currentBoards = board.slice(indexOfFirstBoard, indexOfLastBoard);
 
     return (
-        <div>
+        <div className="showContainer">
             <h1 className="text-primary fw-bold mb-2 mt-2">Saved Builds</h1>
             <Table responsive>
                 <thead>
                     <tr>
-                        <th className="text-primary mb-1">ID #</th>
+                        <th className="text-primary mb-1">#</th>
                         <th className="text-primary mb-1">Models</th>
                         <th className="text-primary mb-1">Switches</th>
                         <th className="text-primary mb-1">KeyCaps</th>
@@ -96,10 +97,11 @@ const ShowKeyboard0 = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {keyboard.map((keyboard) => {
+                    {keyboards.map((keyboard, index) => {
+                        
                         return (
                             <tr>
-                                <th scope="row">{keyboard.id}</th>
+                                <th scope="row">{index + 1}</th>
                                 <td>{keyboard.brand}</td>
                                 <td>{keyboard.switches}</td>
                                 <td>{keyboard.keycaps}</td>
@@ -107,7 +109,7 @@ const ShowKeyboard0 = () => {
                                 <td>{keyboard.price}</td>
                                 <td>{keyboard.size}</td>
                                 <td><Edit handleUpdate={handleUpdate} keyboard={keyboard}/></td>
-                                <td><Button onClick={() => {handleDelete(keyboard.id)}} color="info">REMOVE</Button></td>
+                                <td><Button onClick={() => {handleDelete(keyboard.id)}} color="danger">REMOVE</Button></td>
                             </tr>
                         )
                     })}
