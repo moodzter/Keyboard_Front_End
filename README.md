@@ -1,83 +1,16 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
- <ul>
-            {filteredData.map((item) => (
-                <li hidden key={item.id}>
-                    <li>{item.brand}</li>
-                    <li>{item.switches}</li>
-                    <li>{item.keycaps}</li>
-                    <li>{item.stabilizers}</li>
-                    <li>{item.price}</li>
-                    <li>{item.size}</li>
-                    </li>
-            ))}
-        </ul>
+Keyboard Part Picker, 
+ by Nick Moody, Mitchell Garrison, and Eduardo Prado. 
+ 
+ We used a django backend, using SQL as our database. Our model for our keyboard has about 6 key values, one of them being a number and the rest of them being strings. We have not hosted it online yet, but it is running through our own localhost. 
+ 
+ Inside of our front end, we have a saved builds table which calls upon each object inside of our database, and displays it using table rows and cells. You have the option inside of the table either to remove, or to edit. Inside of the remove button, we implemented a type of warning just in case you clicked it by mistake. The warning pops up via a JSX file, and there is a yes or no button. If you click no, the delete process will stop, and your information will stay. If you say yes, the data will be deleted right then without having to refresh the page. We used useRef() for the first time doing this, because to keep track of which one we wanted to delete we had to store that specific object's id inside of a useRef(), and call on it later after we've said yes to deleting. 
+ 
+ Another key technology we used was our search bar. Using the search bar, a user is able to search up pre-built keyboards, and add them to your saved builds. The search bar dynamically changes on each letter that you type, and different results are popping on each letter. Uppercase or lowercase does not matter, as we made the user-input and the results lowercase inside the functionality, in case of user-error. We sort based on whatever the user-input is, and we go through each key value of the object inside the database that we are searching up, string it, lowercasing it, and lastly making sure that whatever the key value is, inludes what the user is typing. This is all done in a if else statement, where if the user-input is an empty string, or basically nothing, then nothing will show. However the moment a user starts typing results will pop up. 
+ 
+ And finally, we have full CRUD functionality. A user can create a keyboard to add to their saved builds, or delete one, or edit, and view the keyboard inside of our saved builds table. Also, the site has user-friendly navigation, where on each different element you click on the others disappear, and only displays the one that you clicked on. On the create form, once you click submit, it returns you to your saved builds with the one that you created already there. 
+ 
+ We have a footer and a header, with a footer including a trademark name/copyright statements. Inside of our header we have links to our backend repo and our frontend repo. We also have links to all of our linkedins, and a google search by implemented by Eduardo. Also, we have a home button that will take you back to the default screen whenever you'd like. 
+ 
+ UNSOLVED PROBLEMS ======>
+ 
+  We would have liked to have user authentication, where when you log in only the saved keyboards that you have built will pop up, and when you log out they disappear as well, saving them for when you'd like to log in again. Also, we didn't want the search bar popping up when you were in the create form creating another keyboard, so we made it so the search bar was invisible when we were creating a keyboard, however when you click submit and it takes you back to the home page, it leaves the search bar invisible and we didn't know how to fix that right away. Also, the edit form isn't very aesthetic with the rest of the table, and when you drop it down it extendes the cell and makes it bigger than the rest. A possible solution to this would have been to make a separate show page for the specific keyboard that you would have liked to edit, and have there be an edit button inside of there. So it wouldn't have changed the look of the rest of the items inside of the table. 
