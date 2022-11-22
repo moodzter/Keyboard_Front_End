@@ -3,15 +3,7 @@ import {Button} from 'reactstrap'
 import data from "./ListData.json"
 import axios from 'axios'
 
-function List(props) {
-
-    const handleCreate = (item) => {
-        axios
-        .post('http://localhost:8000/api/keyboards', item)
-        .then((response) => {
-            console.log('successfully added')
-        })
-    }
+\
 
     // const handleSubmit = (event) => {
     //     event.preventDefault()
